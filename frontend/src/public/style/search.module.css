@@ -1,0 +1,548 @@
+
+#mobileSearchContainer {
+    display: none;
+}
+
+.lineSeparator{
+    display: none;
+}
+#topBar{
+    display: block;
+    left:0;
+    top:0;
+    width:100%;
+    min-height: 10px;
+    padding:0 0 20px 0;
+}
+#topMainContainer{
+    position: relative;
+    top:0;
+    left:0;
+    width:calc(100% - 250px);
+    height:max-content;
+    background-color: transparent;
+    margin:65px 0 0 0;
+    padding:20px 0;
+}
+
+#topBarBottomContainer{
+    display: block;
+    width:100%;
+    left:0;
+    top:0;
+    min-height: 20px;
+    padding: 10px 0 20px 0;
+}
+#topBarTopContainer{
+    display: block;
+    width:100%;
+    left:0;
+    top:0;
+    min-height: 20px;
+}
+#topBarTopContainer p{
+    display: inline-block;
+    left:0;
+    top:0;
+    position: relative;
+    width:max-content;
+    margin:0 10px 0 0;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+
+#resultsContainer{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    min-height: 400px;
+}
+
+
+
+@media screen and (max-width: 1110px){
+    #topMainContainer{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        height:max-content;
+        background-color: transparent;
+        margin:65px 0 0 0;
+        padding:20px 0;
+    }
+}
+
+@media screen and (max-width:780px){
+    #mobileSearchContainer{
+        position: relative;
+        top:0;
+        left:0;
+        width:calc(100% - 40px);
+        left:20px;
+        padding:10px;
+        border:1px solid #000;
+        margin:0 0 10px 0;
+        display: block;
+        border-radius: 50px;
+    }
+    #mobileSearchContainer p{
+        margin:0 !important;
+        text-decoration: none;
+        display: inline-block !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        vertical-align: middle;
+        width:calc(100% - 35px) !important;
+    }
+    #mobileSearchContainer img{
+        display: inline-block;
+        width:25px;
+        vertical-align: middle;
+        margin:0 10px 0 0;
+    }
+    .separatorLine{
+        position: relative;
+        width:100%;
+        left:0;
+        height:10px;
+        background-color: #e1e1e1;
+        margin:0 0 20px 0;
+        display: block;
+    }
+    .hideMobile{
+        display: none !important;
+    }
+    #resultsContainer{
+        padding:0 10px;
+    }
+    .topicContainer{
+        position: relative;
+        top:0;
+        left:0;
+        display: inline-block;
+        width:max-content;
+        background-color: #fff;
+        border:1px solid #000;
+        border-radius: 30px;
+        padding: 10px 20px;
+        margin:0 20px 20px 0;
+        cursor: pointer;
+    }
+    .topicContainer p{
+        display: inline-block;
+        position: relative;
+        width:max-content;
+        vertical-align: middle;
+    }
+    .topicContainer img{
+        display: inline-block;
+        position: relative;
+        height:25px;
+        cursor: pointer;
+        vertical-align: middle;
+    }
+    .searchSuggestP{
+        position: relative;
+        display: block;
+        top:0;
+        width:100%;
+        left:0;
+        margin:0;
+        padding:20px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+    }
+    #searchTopContainer{
+        position: relative;
+    }
+    #searchIconClick{
+        position: absolute;
+        right:20px;
+        height:40px;
+        top:10px;
+        vertical-align: middle;
+    }
+    .searchSuggestMainContainer{
+        position:relative;
+        height:auto;
+        background-color: #fff;
+        padding:20px 20px 0 20px;
+        top:0;
+        left:0;
+        width:100%;
+        max-height: calc(100% - 93px);
+        overflow-y: auto;
+    }
+    #searchMainContainer{
+        padding:20px 0 0 0;
+        display:block;
+        width:100%;
+        height:calc(100% - 20px);
+        background-color: #fff;
+        position:relative;
+        top:20px;
+        border-radius:15px 15px 0 0;
+    }
+    #searchXImg{
+        position: absolute;
+        right:15px;
+        top:-5px;
+        height:30px;
+    }
+    #searchTransparentContainer{
+        z-index: 10;
+        position: fixed;
+        width:100%;
+        height:100%;
+        display: block;
+        top:120%;
+        background-color: rgba(0,0,0,0.5);
+        transition:0.05s linear all;
+    }
+    .searchContainerVisible{
+        top:0 !important;
+    }
+    #categoriesMainContainer{
+        display: none;
+    }
+    .displayNone{
+        right:-50px !important;
+    }
+    #scrollTopButton{
+        position: fixed;
+        bottom:80px;
+        height:50px;
+        width:50px;
+        right:20px;
+        background-color: #fff;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+        transition: all 0.3s;
+    }
+    #scrollTopButton img{
+        position: relative;
+        left:50%;
+        top:50%;
+        height:45px;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .linkP{
+        text-decoration: none;
+        color:#ff7700;
+        margin:0 0 20px 0;
+        width:100%;
+        padding:0 20px;
+    }
+    .sectionTitleP{
+        z-index: 2;
+        padding:15px 20px;
+        margin:0;
+        width: 100%;
+        background-color: #fff;
+        border-bottom:1px solid #c2c2c2;
+    }
+    .stickyHeader{
+        position: fixed;
+        border-bottom:1px solid #c2c2c2;
+        top:0;
+        left:0;
+        background-color: #fff;
+    }
+    .stickyHeaderParent{
+        padding:54px 0 0 0 !important;
+    }
+    #mobileTopNav{
+        position: relative;
+        left:0;
+        top:0;
+        width:100%;
+        height: 60px;
+        background-color: #fff;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+    #iconTopMobileNav{
+        position: relative;
+        display: inline-block;
+        left:0;
+        top:0;
+        height:40px;
+        vertical-align: middle;
+    }
+    #searchInput{
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        top:0;
+        left:0;
+        margin:0;
+        width:calc(100% - 40px);
+        height:100%;
+        z-index: 2;
+        padding:0 10px;
+        border:none;
+    }
+    .searchInputActive{
+        left:0 !important;
+    }
+    #searchInputDiv{
+        position: relative;
+        left:20px;
+        width:calc(100% - 40px);
+        border:1px solid #000;
+        background-color: #fff;
+        height:max-content;
+        border-radius: 5px;
+        top:0;
+        padding:5px;
+        transition: all 0.3s;
+    }
+    #logoMobileTopNav{
+        position: relative;
+        left:20px;
+        height:40px;
+        top:10px;
+        display: inline-block;
+        vertical-align: middle;
+    } 
+    .regularText{
+        margin:0 0 20px 0;
+        width:100%;
+        padding:0 20px;
+    }
+    .regularTextNoMargin{
+        margin:0;
+        width:100%;
+    }
+    .innerMainContainer{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        background-color: transparent;
+        min-height: 30px;
+    }
+    .topMainContainerInnerContainer{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        background-color: transparent;
+        min-height: 30px;
+    }
+    #topMainContainer{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        height:max-content;
+        min-height: 700px;
+        margin:0 0 20px 0;
+    }
+    #headerImgDiv{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        padding:60px 20px;
+        background-color:beige;
+    }
+    #headlineP{
+        padding:0 15px;
+        max-width: 500px;
+        margin:0 0 40px 0;
+    }
+    .mainFeedContainers{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        height:max-content;
+        background-color: transparent;
+        margin:0 0 0 0;
+        padding:0;
+    }
+
+
+    #topBarTopContainer p{
+        margin:0;
+        text-align: left;
+        width:100%;
+        display: block;
+    }
+    #topBarTopContainer p:first-child{
+        margin:0 0 10px 0;
+        text-decoration: underline;
+    }
+    #topBarBottomContainer{
+        padding: 10px 20px 20px 20px !important;
+    }
+}
+@media screen and (min-width:780px){
+    .hideDesktop{
+        display: none !important;
+    }
+    .topicContainer{
+        position: relative;
+        top:0;
+        left:0;
+        display: inline-block;
+        width:max-content;
+        border:1px solid #000;
+        background-color: #fff;
+
+        border-radius: 30px;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin:0 10px 0 0;
+    }
+    .topicContainer p{
+        display: inline-block;
+        position: relative;
+        width:max-content;
+        vertical-align: middle;
+    }
+    .topicContainer img{
+        display: inline-block;
+        position: relative;
+        height:25px;
+        cursor: pointer;
+        vertical-align: middle;
+    }
+    #seeMoreCats{
+        position: absolute;
+        bottom:0;
+        left:0;
+        height: max-content;
+        width:100%;
+        background-color: #fff;
+        padding:10px 20px;
+        text-align: center;
+    }
+    #seeMoreCats p:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .searchSuggestP{
+        position: relative;
+        display: block;
+        top:0;
+        width:100%;
+        left:0;
+        margin:0;
+        padding:20px 0 0 0;
+        cursor: pointer;
+    }
+    .searchSuggestP:hover{
+        text-decoration: underline;
+    }
+
+    .searchSuggestMainContainer{
+        display: block;
+        position: relative;
+    }
+    .sectionTitleP{
+        z-index: 2;
+        padding:0 0 20px 0;
+        margin:0;
+        width: 100%;
+    }
+    #bodyContainer{
+        position: relative;
+        width:76%;
+        height: max-content;
+        min-height: 1000px;
+        left:12%;
+    }
+    .fixedCategoriesContainer{
+        top:85px !important;
+        position: fixed !important;
+    }
+    #categoriesMainContainer{
+        width:calc(250px);
+        left:12%;
+        position: absolute;
+        top:405px;
+        height:max-content;
+        max-height: calc(100% - 365px);
+        min-height:200px;
+        border-radius: 5px;
+        overflow-y: hidden;
+        padding:20px 20px 0 20px;
+        background-color: #fff;
+        box-shadow: rgb(28 28 28 / 8%) 0px 1.42623px 2.85246px;
+    }
+    .linkP{
+        text-decoration: none;
+        color:#ff7700;
+        margin:0 0 20px 0;
+        width:100%;
+        padding:0 20px;
+    }
+    #scrollTopButton{
+        display: none;
+    }
+    #mobileTopNav{
+        display: none;
+    }
+    .regularText{
+        margin:0 0 20px 0;
+        width:100%;
+    }
+    .regularTextNoMargin{
+        margin:0;
+        width:100%;
+    }
+    
+    .innerMainContainer{
+        position: relative;
+        top:0;
+        left:270px;
+        width:calc(100% - 520px);
+        background-color: transparent;
+        min-height: 30px;
+    }
+    .topMainContainerInnerContainer{
+        position: relative;
+        top:0;
+        left:0;
+        width:calc(100% - 20px);
+        background-color: transparent;
+        min-height: 30px;
+    }
+    #searchInput{
+        display: none;
+    }
+    #headerImgDiv{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        padding:80px 20px;
+        border-radius: 10px;
+        background-color:beige;
+        height:300px;
+    }
+    #headlineP{
+        padding:0 15px;
+        max-width: 500px;
+        margin:0 0 30px 0;
+    }
+    .mainFeedContainers{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        height:max-content;
+        background-color: transparent;
+        margin:0 0 0 0;
+        padding:0 0 50px 0;
+    }
+
+    #searchMainContainer{
+        display: none;
+    }
+}

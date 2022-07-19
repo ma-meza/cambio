@@ -1,0 +1,22 @@
+
+#mainBody{
+    position: relative;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    width:80%;
+    max-width: 1150px;
+    height:max-content;
+    min-height: 1000px;
+}
+@media screen and (max-width:780px){
+    #mainBody{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        height:max-content;
+        min-height: unset;
+        transform: unset;
+    }
+}

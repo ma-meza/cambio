@@ -1,0 +1,67 @@
+#formCard{
+    position: absolute;
+    width:60%;
+    max-width: 500px;
+    border:1px solid #000;
+    top:calc(50% - 32.5px);
+    left:50%;
+    height: auto;
+    padding:20px;
+    max-height: 90%;
+    border-radius: 10px;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #fff;
+    overflow-y: auto;
+}
+#bodyContainer{
+    position: relative;
+    left:0;
+    top:65px;
+    width:100%;
+    min-height: 100vh;
+}
+.button{
+    padding:15px 10px;
+    width:100%;
+    margin:0 0 20px 0;
+}
+#formRow{
+    position: relative;
+    margin:0 0 20px 0;
+    border: 1px solid rgb(172, 172, 172);
+    padding:15px 10px;
+    border-radius: 10px;
+
+}
+.regularText{
+    margin:0 0 20px 0;
+}
+.regularTextHalfMargin{
+    margin:0 0 10px 0;
+}
+
+#textInput{
+    position: relative;
+    left:0;
+    width:100%;
+    height:50px;
+    margin:0 0 20px 0;
+    border:1px solid #b1b1b1;
+    padding:0 10px;
+    border-radius: 9px;
+}
+
+@media screen and (max-width:780px){
+#formCard{
+top:0;
+transform: unset;
+left:0;
+width:100%;
+max-height: unset;
+border:none;
+overflow-y: unset;
+}
+#bodyContainer{
+    top:0;
+}
+}

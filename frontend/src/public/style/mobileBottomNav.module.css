@@ -1,0 +1,52 @@
+@media screen and (min-width:780px){
+    #mainContainer{
+        display: none;
+    }
+}
+@media screen and (max-width:780px){
+    #mainContainer{
+        position: fixed;
+        left:0;
+        bottom:0;
+        width:100%;
+        height:60px;
+        background-color: #fff;
+        border-top:1px solid rgba(0,0,0,0.3);
+        padding:5px 0;
+    }
+}
+
+.iconSeparator{
+position: relative;
+display: inline-block;
+width:calc((100% / 3) - 10px);
+margin:0 5px;
+vertical-align: middle;
+}
+
+.iconContainer{
+    height:30px;
+    display: block;
+    width:100%;
+}
+
+.iconContainer img{
+    height:100%;
+    left:50%;
+    transform: translateX(-50%);
+    position: relative;
+    display: block;
+}
+
+.textContainer{
+    height:20px;
+    display: block;
+    width:100%;
+}
+.textContainer p{
+    text-align: center;
+    margin:0;
+    width:100%;
+    overflow: hidden;
+    color:#000;
+}

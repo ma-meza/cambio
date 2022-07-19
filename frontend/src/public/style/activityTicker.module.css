@@ -1,0 +1,127 @@
+.regularText{
+    margin:0 0 20px 0;
+    width:100%;
+}
+.regularTextHalfMargin{
+    margin:0 0 10px 0;
+    width:100%;
+}
+.regularTextNoMargin{
+    margin:0;
+    width:100%;
+}
+
+.divTitleP{
+    position: relative;
+    width:100%;
+    padding:0 20px;
+    margin:0 0 20px 0;
+}
+#historyTabMainContainer{
+    position: fixed;
+    top:85px;
+    height:auto;
+    background-color: #fff;
+    width: 210px;
+    left:calc(((100% - 1150px) / 2) + 919px);
+    max-height: calc(100% - 365px);
+    box-shadow: rgb(28 28 28 / 8%) 0px 1.42623px 2.85246px;
+    border:1px solid #ededed;
+    overflow-y: hidden;
+    padding:20px 0 0 0;
+    min-height:150px;
+}
+@media screen and (max-width:1500px){
+    
+    #historyTabMainContainer{
+        
+        right:12%;
+        left:unset;
+        width: 230px;
+    }
+    .historyEventCard{
+        width:100%;
+        left:0;
+        top:0;
+        height:max-content;
+        padding:0 20px;
+        margin:0 0 20px 0;
+        /* border:1px solid #ededed; */
+        border-radius:4px;
+        overflow-y: hidden;
+        background-color: #fff;
+        
+    }
+}
+
+
+@media screen and (max-width:1110px){
+    #historyTabMainContainer{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width:780px){
+    .displayNone{
+        right:-50px !important;
+    }
+    .regularText{
+        margin:0 0 20px 0;
+        width:100%;
+    }
+    .regularTextHalfMargin{
+        margin:0 0 10px 0;
+        width:100%;
+    }
+    .regularTextNoMargin{
+        margin:0;
+        width:100%;
+    }
+    #historyTabMainContainer{
+        display: none;
+    }
+}
+@media screen and (min-width:780px){
+    
+    .regularText{
+        margin:0 0 20px 0;
+        width:100%;
+    }
+    .regularTextHalfMargin{
+        margin:0 0 10px 0;
+        width:100%;
+    }
+    .regularTextNoMargin{
+        margin:0;
+        width:100%;
+    }
+    #historyTabMainContainer{
+        position: fixed;
+        top:85px;
+        height: calc(100% - 365px);
+        background-color: transparent;
+        width: 230px;
+        right:12%;
+        overflow-y: hidden;
+        box-shadow: rgb(28 28 28 / 8%) 0px 1.42623px 2.85246px;
+        border-radius: 5px;
+    }
+} */

@@ -1,0 +1,265 @@
+body{
+    margin:0;
+    background-color: #fff;
+}
+@media screen and (max-width:780px){
+    body{
+        margin:0;
+        background-color: #fff;
+    }
+  
+}
+@font-face {
+    font-family: 'Larsseit';
+    src: url("https://cambio-ui.s3.amazonaws.com/Larsseit.ttf") format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Larsseit';
+    src: url("https://cambio-ui.s3.amazonaws.com/Larsseit-Bold.ttf") format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Larsseit';
+    src: url("https://cambio-ui.s3.amazonaws.com/Larsseit-ExtraBold.ttf") format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Roc Grotesk';
+    src: url("https://cambio-ui.s3.amazonaws.com/rocGrotesk.otf ");
+    font-style: normal;
+    font-weight: 700;
+}
+*{
+box-sizing: border-box;
+outline: none;
+font-family: var(--systemFont);
+-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+:root{
+    --mainColor:#ff7700;
+
+    --mobileFontSizeSmall:14px;
+    --desktopFontSizeSmall:13px;
+
+    --mobileFontSizeRegular:17px;
+    --desktopFontSizeRegular:16px;
+
+    --mobileFontSizeBig:19px;
+    --desktopFontSizeBig:18px;
+
+    --mobileFontSizeVeryBig:25px;
+    --desktopFontSizeVeryBig:22px;
+
+    --mobileFontSizePageTitle:25px;
+
+    --fontWeightMedium:500;
+    --fontWeightRegular:400;
+    --fontWeightBold:700;
+
+    --systemFont:'Larsseit', sans-serif;
+}
+
+.inputText{
+background-color: #fff;
+padding:0 10px 0 10px;
+transition:all 0.10s ease-in-out;
+border:1px solid #000;
+border-radius: 5px;
+}
+.inputText:focus{
+    border:2px solid black;
+    background-color: #fff;
+}
+.buttonCta{
+    background-color: #ff7700;
+    border-radius: 0;
+    border: 1px solid var(--mainColor);
+    display: block;
+    color:var(--mainColor);
+    cursor:pointer;
+    font-weight: var(--fontWeightMedium);
+    transition:all 0.10s ease-in-out;
+    color:#fff;
+}
+.buttonCta:hover{
+    color:#fff;
+    background-color: #de6901;
+}
+
+.secondaryButton img{
+    display:inline-block;
+    vertical-align:top;
+    height:20px;
+    margin:0;
+}
+.mainHeadline{
+    font-family: "Roc Grotesk";
+    font-size: var(--mobileFontSizePageTitle);
+}
+.blueButton{
+    padding:20px 25px;
+    border-radius:0;
+    background-color: #0022ff;
+    color:white;
+    cursor:pointer;
+    border:1px solid #0022ff;
+    text-decoration: none;
+    font-weight: var(--fontWeightMedium);
+    font-size:var(--mobileFontSizeRegular);
+    transition:all 0.10s ease-in-out;
+}
+.blueButton:hover{
+    background-color: #001dd9;
+}
+@media screen and (max-width:780px){
+    .secondaryButton{
+        padding:20px 25px;
+        border-radius:50px;
+        background-color: #fff;
+        color:black;
+        cursor:pointer;
+        border:1.5px solid black;
+        text-decoration: none;
+        font-weight: var(--fontWeightMedium);
+        font-size:var(--mobileFontSizeRegular);
+    }
+    .secondaryButton img{
+        display:inline-block;
+        vertical-align:middle;
+        height:20px;
+        margin:0;
+    }
+    .megaTitle{
+        font-weight: var(--fontWeightBold);
+        font-size: var(--mobileFontSizePageTitle);
+    }
+    .title1{
+        font-weight: var(--fontWeightBold);
+        font-size: var(--mobileFontSizeVeryBig);
+    }
+    .title2{
+        font-weight: var(--fontWeightBold);
+        font-size: var(--mobileFontSizeBig);
+    }
+    .regularText{
+        font-weight: var(--fontWeightRegular);
+        font-size: var(--mobileFontSizeRegular);
+        line-height: 24px;
+    }
+    .regularTextBold{
+        font-weight: var(--fontWeightBold);
+        font-size: var(--mobileFontSizeRegular);
+    }
+    .regularTextMedium{
+        font-weight: var(--fontWeightMedium);
+        font-size: var(--mobileFontSizeRegular);
+    }
+    .smallText{
+        font-weight: var(--fontWeightRegular);
+        font-size: var(--mobileFontSizeSmall);
+    }
+    .errorText{
+        color:rgb(218, 80, 80) !important;
+        font-size: var(--mobileFontSizeRegular);
+        font-weight: var(--fontWeightRegular);
+    }
+
+}
+@media screen and (min-width:780px){
+    .secondaryButton{
+        padding:15px 20px;
+        border-radius:50px;
+        background-color: #fff;
+        color:black;
+        cursor:pointer;
+        border:1.5px solid black;
+        text-decoration: none;
+        font-weight: var(--fontWeightMedium);
+        font-size:var(--desktopFontSizeRegular);
+    }
+.buttonCta{
+    font-size:var(--desktopFontSizeRegular);
+}
+.errorText{
+    color:rgb(218, 80, 80) !important;
+    font-size: var(--desktopFontSizeRegular);
+    font-weight: var(--fontWeightRegular);
+}
+
+.megaTitle{
+    font-weight: var(--fontWeightBold);
+    font-size: 28px;
+}
+.title1{
+    font-weight: var(--fontWeightBold);
+    font-size: var(--desktopFontSizeVeryBig);
+}
+.title2{
+    font-weight: var(--fontWeightBold);
+    font-size: var(--desktopFontSizeBig);
+}
+.regularText{
+    font-weight: var(--fontWeightRegular);
+    font-size: var(--desktopFontSizeRegular);
+    line-height: 24px;
+}
+.regularTextMedium{
+    font-weight: var(--fontWeightMedium);
+    font-size: var(--desktopFontSizeRegular);
+}
+.regularTextBold{
+    font-weight: var(--fontWeightBold);
+    font-size: var(--desktopFontSizeRegular);
+}
+.regularTextGrey{
+    font-weight: var(--fontWeightRegular);
+    font-size: var(--desktopFontSizeRegular);
+    color:rgba(0, 0, 0, 0.514);
+}
+.smallText{
+    font-weight: var(--fontWeightRegularm);
+    font-size: var(--desktopFontSizeSmall);
+}
+}
+
+
+.modalCancelButton{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    margin:0 10px 0 0;
+    background-color: transparent;
+    border:none;
+}
+.modalCancelButton:hover{
+    text-decoration: underline;
+}
+
+.modalSubmitButton{
+    padding:15px 20px;
+    position: relative;
+    display: inline-block;
+}
+.modalSubmitButtonDiv{
+    position: relative;
+    display: block;
+    left:0;
+    top:0;
+    width:100%;
+    height: max-content;
+    padding:10px 0 0 0;
+}

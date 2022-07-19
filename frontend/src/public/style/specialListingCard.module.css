@@ -1,0 +1,138 @@
+@media screen and (min-width:780px){
+    .historyCardContainer{
+        position: relative;
+        display: inline-block;
+        width:300px;
+        height:max-content;
+        min-height: 200px;
+        padding:20px;
+        border-radius: 10px;
+        margin:0 10px 10px 0;
+        box-shadow: rgb(28 28 28 / 8%) 0px 1.42623px 2.85246px;
+        background-color: #fff;
+    }
+}
+@media screen and (max-width:780px){
+    .historyCardContainer{
+        position: relative;
+        display: inline-block;
+        width:calc(100% - 40px);
+        height:max-content;
+        min-height: 200px;
+        padding:20px;
+        left:20px;
+        border-radius: 10px;
+        margin:0 10px 10px 0;
+        box-shadow: rgb(28 28 28 / 8%) 0px 1.42623px 2.85246px;
+        background-color: #fff;
+    }
+}
+
+.listingMainPicture{
+    position: relative;
+    display: inline-block;
+    left:0;
+    height:100px;
+    width:100px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin:0 20px 0 0;
+    vertical-align: top;
+}
+.historyTitleContainer{
+    position: relative;
+    display: inline-block;
+    width:calc(100% - 120px);
+    height: max-content;
+    vertical-align: top;
+}
+.regularText{
+    margin:0 0 10px 0;
+}
+#historyTotalContainer{
+    position: relative;
+    display: block;
+    width:100%;
+    height: max-content;
+    margin:0 0 20px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    padding:0 0 10px 0;
+}
+#historyTopContainer{
+    position: relative;
+    display: block;
+    width:100%;
+    height: max-content;
+    margin:0 0 15px 0;
+}
+#historyBottomContainer{
+    position: relative;
+    display: block;
+    width:100%;
+    height: max-content;
+    margin:0;
+}
+#historyBottomContainer p{
+    display: inline-block;
+    width:max-content;
+    position: relative;
+    vertical-align: middle;
+    margin:0;
+}
+#historyBottomContainer a{
+    text-decoration: none;
+}
+#historySellerInfoContainer{
+    position: relative;
+    display: block;
+    width:100%;
+    height: max-content;
+    margin:0 0 20px 0;
+}
+#historySellerInfoContainer p{
+    color:#000;
+}
+#historySellerPicture{
+    position: relative;
+    display: inline-block;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin:0 10px 0 0;
+}
+.historyCta{
+    width:100%;
+    position: relative;
+    display: block;
+    padding:15px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border:none;
+    margin:0;
+    cursor: pointer;
+    background-color: #ff7700;
+    color:#fff;
+}
+
+.historyHalfCta{
+    width:calc(50% - 10px);
+    margin:0 20px 0 0;
+    position: relative;
+    display: inline-block;
+    padding:15px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    background-color: #ff7700;
+    color:#fff;
+}
+.historyHalfCta:last-child{
+    margin:0 !important;
+}

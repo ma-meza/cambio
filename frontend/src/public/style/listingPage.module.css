@@ -1,0 +1,719 @@
+/*::-webkit-scrollbar-track {*/
+/*    box-shadow: inset 0 0 5px grey;*/
+/*    border-radius: 10px;*/
+/*}*/
+/*::-webkit-scrollbar-thumb {*/
+/*    background: red;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+
+.floatingButtonCta{
+    display: none;
+}
+
+#topMainContainer .innerMainContainer{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: transparent;
+    height: 28vw;
+    max-height: 417px;
+}
+#desktopLeftSide{
+    position: relative;
+    display: inline-block;
+    width:70%;
+    vertical-align: top;
+}
+#desktopRightSide{
+    position: relative;
+    display: inline-block;
+    width:30%;
+    vertical-align: top;
+    padding:20px 0 0 20px;
+    margin:65px 0 0 0;
+}
+
+#shareIconsBar{
+    position: relative;
+    left:0;
+    top:0;
+    height:auto;
+    display: block;
+    margin:0 0 50px 0;
+}
+
+@media screen and (max-width:1180px) and (min-width: 780px){
+    #topMainContainer .innerMainContainer{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        background-color: transparent;
+        height: 40vw;
+        max-height: 450px;
+    }
+    #desktopLeftSide{
+        position: relative;
+        display: block;
+        width:100%;
+    }
+    #desktopRightSide{
+        display: none;
+    }
+    .floatingButtonCta{
+        color:#fff !important;
+        background-color: #ff7700 !important;
+        border:none !important;
+        display: inline-block;
+        position: relative;
+        top:0;
+        margin:0 10px 0 0;
+        padding:10px 20px;
+    }
+}
+
+
+
+#paymentSidebarContainer{
+    position: relative;
+    display: block;
+    width:100%;
+    min-height: 100px;
+    border-radius: 10px;
+    border:1px solid #acacac;
+    background-color: white;
+    padding:20px;
+}
+#buyTypeSelectorContainer{
+    position: relative;
+    display: block;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: #202225;
+    border-radius: 10px;
+    min-height: 50px;
+    padding:10px;
+    margin: 0 0 20px 0;
+}
+#paymentSidebarContainer button{
+    width:100%;
+    padding:20px 25px;
+}
+
+#selectedBuyType{
+    position: relative;
+    display: inline-block;
+    width:calc(50% - 5px);
+    background-color: #ff7700;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: top;
+    padding:10px 0;
+    cursor: pointer;
+    color:white;
+}
+#unselectedBuyType{
+    position: relative;
+    display: inline-block;
+    width:calc(50% - 5px);
+    background-color: transparent;
+    text-align: center;
+    vertical-align: top;
+    padding:10px 0;
+    color:#acacac;
+    cursor: pointer;
+}
+
+
+
+.starP{
+    position: relative;
+    margin:0;
+    height: max-content;
+}
+.starP img{
+    height:35px;
+    display: inline-block;
+    margin:0 2.5px 0 0;
+}
+
+.starPSmall{
+    position: relative;
+    margin:0;
+    height: max-content;
+}
+.starPSmall img{
+    height:30px;
+    display: inline-block;
+    margin:0 2px 0 0;
+}
+.bottomGradient{
+    background:linear-gradient(180deg,rgba(0,0,0,0) 50%,rgba(0,0,0,0.9));
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 50%;
+}
+#bigImgDesktopCarouselContainer{
+    display: block;
+    position: fixed;
+    left:0;
+    width:100%;
+    top:0;
+    height:100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 200;
+    overflow: hidden;
+}
+#carouselLeftPic{
+    position: absolute;
+    height:50%;
+    width: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top:25%;
+    left:0;
+    transform: translateX(-60%);
+}
+#carouselMiddlePic{
+    position: absolute;
+    height:50%;
+    width: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left:50%;
+    top:25%;
+    transform: translateX(-50%);
+}
+#carouselRightPic{
+    position: absolute;
+    height:50%;
+    width: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top:25%;
+    left:100%;
+    transform: translateX(-40%);
+}
+#carouselX{
+    position: absolute;
+    right:20px;
+    top:20px;
+    height:60px;
+    width:60px;
+    background-color: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#carouselArrowLeft{
+    position: absolute;
+    left:20%;
+    transform: translateX(-50%) translateY(-50%);
+    height:60px;
+    width:60px;
+    background-color: #fff;
+    border-radius: 100%;
+    top:50%;
+    cursor: pointer;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#carouselArrowRight{
+    position: absolute;
+    right:20%;
+    transform: translateX(50%) translateY(-50%);
+    height:60px;
+    width:60px;
+    background-color: #fff;
+    border-radius: 100%;
+    top:50%;
+    cursor: pointer;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#carouselDotsContainer{
+    display: none;
+}
+.carouselDot{
+    position: relative;
+    left:0;
+    top:0;
+    height: 100%;
+    width:calc((100vw - 40px) / 7);
+    margin:0 0 0 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.activeCarouselDot{
+    background-color: #ff7700;
+}
+.carouselDot:first-child{
+    margin:0;
+}
+#carouselDotsInnerContainer{
+    position: relative;
+    left:50%;
+    width: max-content;
+    top:0;
+    height:100%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width:780px){
+    #shareIconsBar{
+        position: relative;
+        left:0;
+        top:0;
+        height:auto;
+        display: block;
+        margin:0 0 20px 0;
+    }
+    #desktopRightSide{
+        display: none;
+    }
+    #desktopLeftSide{
+        display: none;
+    }
+    .hideDesktop{
+        display: block !important;
+    }
+    #bigImgDesktopCarouselContainer{
+        display: none;
+    }
+    .buttonCta{
+        display: block;
+        position: fixed;
+        bottom: 80px;
+        width:calc(50% - 50px);
+        padding:10px 20px;
+    }
+    .floatingButtonCta{
+        color:#fff !important;
+        background-color: #ff7700 !important;
+        border:none !important;
+        display: block;
+        position: fixed;
+        bottom: 80px;
+        width:calc(50% - 25px);
+        z-index:4;
+    }
+    .floatingButtonFullWidth{
+        color:#fff !important;
+        background-color: #ff7700 !important;
+        border:none !important;
+        display: block;
+        position: fixed;
+        bottom: 80px;
+        width:calc(100% - 40px);
+        z-index:4;
+        left:20px;
+    }
+    #floatingButtonLeft{
+        left:20px;
+    }
+    #floatingButtonRight{
+        right:20px;
+    }
+    #carouselDotsContainer{
+        display: block;
+        position: absolute;
+        left:0;
+        width:100%;
+        height: 5px;
+        background-color: transparent;
+        bottom:10px;
+    }
+    .sidePadding{
+        padding:0 20px;
+    }
+    .regularText{
+        margin:0 0 20px 0;
+        width:100%;
+    }
+    .regularTextHalfMargin{
+        margin:0 0 10px 0;
+        width:100%;
+    }
+    .regularTextNoMargin{
+        margin:0;
+        width:100%;
+    }
+    .innerMainContainer{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        background-color: transparent;
+        min-height: 30px;
+        height: unset !important;
+        max-height: unset !important;
+    }
+    .mainFeedContainers .innerMainContainer{
+        margin:0 0 150px 0;
+    }
+    #topMainContainer{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        height:max-content;
+        margin:0 0 20px 0;
+
+    }
+    #headerImgDiv{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        padding:60px 0;
+        background-color:beige;
+    }
+    .mainFeedContainers{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        height:max-content;
+        background-color: transparent;
+        margin:0 0 0 0;
+        padding:0;
+    }
+
+    #mainPictureContainer{
+        width:100%;
+        height:40vh;
+        max-height: 800px;
+        border-radius: 0;
+        display:block;
+        white-space: nowrap;
+        margin: 0;
+        background-color: #fff;
+        overflow:auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    #mainPictureContainer img{
+        position: relative;
+        top:50%;
+        left:50%;
+        height:60%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .mainPictureImg{
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        position: relative;
+        top:0;
+        left:0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        display: inline-block;
+        height: 100%;
+        width:100vw;
+    }
+
+    .smallPicturesContainer{
+        display: none;
+    }
+    .separatorLine{
+        position: relative;
+        width:calc(100% + 40px);
+        left:-20px;
+        height:10px;
+        background-color: #e1e1e1;
+        margin:0 0 20px 0;
+    }
+    .reviewCardContainer{
+        position: relative;
+        display: inline-block;
+        left:0;
+        top:0;
+        width:100%;
+        max-width: 400px;
+        height: max-content;
+        vertical-align: middle;
+        margin:0 20px 20px 0;
+    }
+    #mobileNoShow{
+        display: none !important;
+    }
+}
+@media screen and (min-width:780px){
+    .hideDesktop{
+        display: none !important;
+    }
+    .bottomGradient{
+        display: none;
+    }
+    .desktopCarouselIsInactive{
+        display: none !important;
+    }
+    .mainPictureImg{
+        position: relative;
+        top:0;
+        left:0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        height: 100%;
+        width:100%;
+        cursor: pointer;
+        border-radius: 10px;
+        border:1px solid rgba(0,0,0,0.3);
+    }
+    .buttonCta{
+        display: inline-block;
+        position: relative;
+        margin:0 10px 0 0;
+        padding:10px 20px;
+    }
+    .floatingButtonFullWidth{
+        display: inline-block;
+        position: relative;
+        margin:0 10px 0 0;
+        padding:10px 20px;
+    }
+    .linkP{
+        text-decoration: none;
+        color:#ff7700;
+        margin:0 0 20px 0;
+        width:100%;
+        padding:0 20px;
+    }
+    .regularText{
+        margin:0 0 20px 0;
+        width:100%;
+    }
+    .regularTextHalfMargin{
+        margin:0 0 10px 0;
+        width:100%;
+    }
+    .regularTextNoMargin{
+        margin:0;
+        width:100%;
+    }
+    
+
+    .mainFeedContainers .innerMainContainer{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        background-color: transparent;
+        height: max-content;
+        margin:0 0 150px 0;
+    }
+    #headerImgDiv{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        padding:80px 20px;
+        border-radius: 10px;
+        background-color:beige;
+    }
+    #headlineP{
+        padding:0 15px;
+        max-width: 500px;
+        margin:0 0 30px 0;
+    }
+    .mainFeedContainers{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        height:max-content;
+        background-color: transparent;
+        margin:0 0 0 0;
+        padding:20px 0;
+    }
+    #topMainContainer{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        height:max-content;
+        background-color: transparent;
+        margin:65px 0 0 0;
+        padding:20px 0;
+    }
+    #mainPictureContainer{
+        width:50%;
+        height:100%;
+        border-radius: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        overflow: hidden;
+    }
+    #mainPictureContainer img{
+        position: relative;
+        top:50%;
+        left:50%;
+        height:60%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .smallPicturesContainer{
+        width:50%;
+        height:100%;
+        display: inline-block;
+        vertical-align: top;
+        padding:0 0 0 20px;
+    }
+
+    .smallPictureImg{
+        cursor:pointer;
+        position: relative;
+        display: inline-block;
+        margin:0 20px 20px 0;
+        height:calc(50% - 10px);
+        width:calc(50% - 10px);
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border:1px solid rgba(0,0,0,0.3);
+        vertical-align: top;
+    }
+    .smallPictureImg:nth-child(even){
+        margin: 0 0 20px 0;
+    }
+    .smallPictureImg:nth-child(3){
+        margin: 0 20px 0 0;
+    }
+    .smallPictureImg:nth-child(4){
+        margin: 0;
+    }
+    .separatorLine{
+        position: relative;
+        width:500px;
+        left:0;
+        height:1px;
+        background-color: rgb(70, 70, 70);
+        margin:40px 0 20px 0;
+    }
+    .reviewCardContainer{
+        position: relative;
+        display: inline-block;
+        left:0;
+        top:0;
+        width:calc(50% - 10px);
+        max-width: 400px;
+        height: max-content;
+        vertical-align: middle;
+        margin:0 20px 20px 0;
+    }
+}
+
+
+.profilePictureImg{
+    position: relative;
+    display: inline-block;
+    left:0;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: #fff;
+    border:1px solid rgb(63, 63, 63);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0 10px 0 0;
+}
+.profilePictureImg img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    height:60%;
+}
+#sellerTextMainContainer{
+    position: relative;
+    display: inline-block;
+    left:0;
+    height: max-content;
+    width: max-content;
+    vertical-align: middle;
+}
+#sellerTextMainContainer div{
+    position: relative;
+    display: block;
+    left:0;
+    margin:0 0 0 0;
+    width:max-content;
+    height:max-content;
+}
+#sellerTextMainContainer div:last-child{
+    margin:0 !important;
+}
+
+.listingComponentsMainContainer{
+    position: relative;
+    display: block;
+    width:max-content;
+    max-width:100%;
+    left:0;
+    padding: 0 40px 0 0;
+    margin:0 0 20px 0;
+}
+#sellerTextMainContainer p{
+    color:#000;
+    text-decoration: none;
+}
+
+
+
+.reviewCardContainer a{
+    text-decoration: none;
+    color:#000;
+}
+.reviewCardInnerContainer{
+    position: relative;
+    display: block;
+    left:0;
+    width: 100%;
+    margin:0 0 10px 0;
+}
+.reviewCardInnerContainer p{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.inputText{
+    position: relative;
+    left:0;
+    top:0;
+    width:100%;
+    height:45px;
+}
+
+
+#shareIconsBar img{
+    position: relative;
+    display: inline-block;
+    height:35px;
+    margin:0 20px 0 0;
+    cursor: pointer;
+}

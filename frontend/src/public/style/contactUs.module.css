@@ -1,0 +1,151 @@
+
+#headlineText{
+    margin:0 0 20px 0;
+    color:#fff;
+    position: relative;
+    display: block;
+    padding:0;
+}
+
+#submitButton{
+    height:45px;
+    position: relative;
+    display: inline-block;
+    border-radius: 4px;
+    border:2px solid #ff7700;
+    background-color: #ff7700;
+    cursor:pointer;
+    padding:0 20px;
+    margin:0 0 20px 0;
+}
+.socialIcon{
+    position: absolute;
+    right:20px;
+}
+.input{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    max-width:450px;
+    display: block;
+    height:45px;
+    border-radius: 4px;
+    margin:0 0 20px 0;
+}
+#textArea{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    max-width:450px;
+    display: block;
+    height:150px;
+    border-radius: 4px;
+    margin:0 0 20px 0; 
+    resize:none;
+    padding:10px;  
+}
+
+
+@media screen and (min-width:926px){
+
+    .halfDiv{
+        position: relative;
+        left:50%;
+        width:max-content;
+        max-width: 50%;
+        height:auto;
+        text-align: left;
+        display: block;
+        transform: translateX(-50%);
+    }
+    #mainContainer{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        height:100vh;
+        background-color: rgb(32,34,37);
+    }
+    #mainInnerContainer{
+        top:calc(50% - 75px);
+        left:10%;
+        position: relative;
+        width:80%;
+        height:auto;
+        transform: translateY(-50%);
+    }
+    #header{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        height: 75px;
+        padding:20px;
+    }
+    #mockupImg{
+        position: relative;
+        height:500px;
+    }
+    .regularText{
+        margin:0 0 5px 0;
+        color:#fff;
+        position: relative;
+        display: block;
+        padding:0 20px 0 0;
+    }
+}
+
+@media screen and (max-width:926px){
+    .halfDiv{
+        position: relative;
+        left:0;
+        width:100%;
+        height:auto;
+        text-align: left;
+        display: block;
+        margin:0 0 200px 0;
+    }
+    .halfDiv:last-child{
+        margin:0;
+    }
+    #mainContainer{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        min-height: 100vh;
+        background-color: rgb(32,34,37);
+        padding:0 0 180px 0;
+    }
+    #mainInnerContainer{
+        top:0;
+        left:0;
+        position: relative;
+        width:100%;
+        height:auto;
+        padding:20px;
+    }
+    #header{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        height: 75px;
+        padding:20px;
+        margin:0 0 100px 0;
+    }   
+    #mockupImg{
+        position: relative;
+        width:60%;
+        position: relative;
+    }
+    .regularText{
+        margin:0 0 10px 0;
+        color:#fff;
+        position: relative;
+        display: block;
+        padding:0;
+    }
+}

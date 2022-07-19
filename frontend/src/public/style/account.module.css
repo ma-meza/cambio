@@ -1,0 +1,503 @@
+@media screen and (max-width:780px){
+    #saveButtonContainer{
+        position: relative;
+        top:0;
+        left:0;
+        height: max-content;
+        width:100%;
+        display: block;
+    }
+    #saveButtonContainer button{
+        position: absolute;
+        top:0;
+        right:20px;
+        padding:15px 20px;
+    }
+    #bioTextarea{
+        position: relative;
+        width:100%;
+        height:200px;
+        resize: none;
+        padding:10px;
+        line-height: 24px;
+    }
+    #regularTextInput{
+        position: relative;
+        width:100%;
+        height:50px;
+        padding:10px;
+        margin:0 0 40px 0;
+    }
+    .regularText{
+        margin:0 0 20px 0;
+        width:100%;
+        
+    }
+    .regularTextHalfMargin{
+        margin:0 0 10px 0;
+        width:100%;
+    }
+    .regularTextNoMargin{
+        margin:0;
+        width:100%;
+    }
+    .innerMainContainer{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        background-color: transparent;
+        min-height: 30px;
+        padding:0 20px;
+        margin:0 0 60px 0;
+    }
+    #topMainContainer{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        height:max-content;
+        margin:20px 0 20px 0;
+        min-height: 1000px;
+    }
+    #headerImgDiv{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        padding:60px 0;
+        background-color:beige;
+    }
+    
+    #mainPictureImg{
+        width:50%;
+        height:calc(50vw - 40px);
+        background-color: grey;
+        border-radius: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        overflow:hidden;
+    }
+
+    .smallPicturesContainer{
+        width:50%;
+        height:calc(50vw - 40px);
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .smallPictureImg{
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin:0 0 10px 10px;
+        background-color: rgb(170, 32, 32);
+        height:calc(50% - 5px);
+        width:calc(50% - 10px);
+        border-radius: 10px;
+    }
+    .separatorLine{
+        position: relative;
+        width:100%;
+        left:0;
+        height:1px;
+        background-color: rgb(187, 187, 187);
+        margin:45px 0 45px 0;
+    }
+    .reviewCardContainer{
+        position: relative;
+        display: inline-block;
+        left:0;
+        top:0;
+        width:100%;
+        max-width: 400px;
+        height: max-content;
+        vertical-align: middle;
+        margin:0 20px 20px 0;
+    }
+    #sellerTextMainContainer div{
+        position: relative;
+        display: block;
+        left:0;
+        margin:0 0 5px 0;
+        width:max-content;
+        height:max-content;
+    }
+    .listingComponentsMainContainer{
+        position: relative;
+        display: block;
+        width:100%;
+        left:0;
+        padding: 0;
+        margin:0 0 40px 0;
+    }
+    .topicContainer{
+        position: relative;
+        top:0;
+        left:0;
+        display: inline-block;
+        width:max-content;
+        border:1px solid #000;
+        border-radius: 30px;
+        padding: 10px 20px;
+        margin:0 20px 20px 0;
+    }
+    .topicContainer p{
+        display: inline-block;
+        position: relative;
+        width:max-content;
+        vertical-align: middle;
+        margin:0 20px 0 0;
+    }
+    .topicContainer img{
+        display: inline-block;
+        position: relative;
+        height:25px;
+        cursor: pointer;
+        vertical-align: middle;
+    }
+}
+@media screen and (min-width:780px){
+
+    .topicContainer{
+        position: relative;
+        top:0;
+        left:0;
+        display: inline-block;
+        width:max-content;
+        border:1px solid #000;
+        border-radius: 30px;
+        padding: 10px 20px;
+        margin:0 10px 10px 0;
+    }
+    .topicContainer p{
+        display: inline-block;
+        position: relative;
+        width:max-content;
+        vertical-align: middle;
+        margin:0 20px 0 0;
+    }
+    .topicContainer img{
+        display: inline-block;
+        position: relative;
+        height:25px;
+        cursor: pointer;
+        vertical-align: middle;
+    }
+    #bioTextarea{
+        position: relative;
+        width:400px;
+        height:200px;
+        resize: none;
+        padding:10px;
+        line-height: 24px;
+    }
+    #regularTextInput{
+        position: relative;
+        width:400px;
+        height:50px;
+        padding:10px;
+        margin:0 0 40px 0;
+    }
+    #saveButtonContainer{
+        position: relative;
+        top:0;
+        left:0;
+        height: max-content;
+        width:max-content;
+        display: block;
+    }
+    #saveButtonContainer button{
+        position: relative;
+        top:0;
+        left:0;
+        padding:15px 20px;
+    }
+    .linkP{
+        text-decoration: none;
+        color:#ff7700;
+        margin:0 0 20px 0;
+        width:100%;
+        padding:0 20px;
+    }
+    .regularText{
+        margin:0 0 20px 0;
+        width:100%;
+        max-width: 650px;
+    }
+    .regularTextHalfMargin{
+        margin:0 0 10px 0;
+        width:100%;
+        max-width: 650px;
+    }
+    .regularTextNoMargin{
+        margin:0;
+        width:100%;
+        max-width: 650px;
+    }
+    
+    .innerMainContainer{
+        position: relative;
+        top:0;
+        left:12%;
+        width:calc(76% - 250px);
+        background-color: transparent;
+        min-height: 30px;
+    }
+    #headerImgDiv{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        padding:80px 20px;
+        border-radius: 10px;
+        background-color:beige;
+    }
+    #headlineP{
+        padding:0 15px;
+        max-width: 500px;
+        margin:0 0 30px 0;
+    }
+    #topMainContainer{
+        position: relative;
+        top:0;
+        left:0;
+        width:100%;
+        height:max-content;
+        min-height: 700px;
+        background-color: transparent;
+        margin:65px 0 0 0;
+        padding:20px 0;
+    }
+    #mainPictureImg{
+        width:330px;
+        height:330px;
+        background-color: grey;
+        border-radius: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+    }
+
+    .smallPicturesContainer{
+        width:calc(100% - 330px);
+        height:330px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .smallPictureImg{
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin:0 0 20px 20px;
+        background-color: rgb(170, 32, 32);
+        height:155px;
+        width:155px;
+        border-radius: 10px;
+    }
+    .separatorLine{
+        position: relative;
+        width:500px;
+        left:0;
+        height:1px;
+        background-color: rgb(187, 187, 187);
+        margin:50px 0 50px 0;
+    }
+    .reviewCardContainer{
+        position: relative;
+        display: inline-block;
+        left:0;
+        top:0;
+        width:50%;
+        max-width: 400px;
+        height: max-content;
+        vertical-align: middle;
+        margin:0 20px 20px 0;
+    }
+    #sellerTextMainContainer div{
+        position: relative;
+        display: block;
+        left:0;
+        margin:0 0 10px 0;
+        width:max-content;
+        height:max-content;
+    }
+    .listingComponentsMainContainer{
+        position: relative;
+        display: block;
+        width:100%;
+        left:0;
+        padding: 0 40px 0 0;
+        margin:0 0 40px 0;
+    }
+}
+
+.listingSmallCard{
+    position: relative;
+    display: inline-block;
+    left:0;
+    width:250px;
+    height:max-content;
+    margin:0 10px 0 0;
+    color:#000;
+    text-decoration: none;
+}
+.listingPicture{
+    position: relative;
+    width:100%;
+    height:140px;
+    background-color: grey;
+    border-radius: 10px;
+    margin:0 0 10px 0;
+}
+.listingPrice{
+    position: absolute;
+    bottom:10px;
+    right:10px;
+    margin:0;
+    color:#fff; 
+}
+.listingCarousel{
+    position: relative;
+    left:0;
+    width:100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding:0 0 20px 0;
+}
+
+.profilePictureImg{
+    position: relative;
+    display: inline-block;
+    left:0;
+    width:65px;
+    height:65px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: grey;
+    margin:0 10px 0 0;
+}
+.reviewProfilePictureImg{
+    position: relative;
+    display: inline-block;
+    left:0;
+    width:45px;
+    height:45px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: grey;
+    margin:0 10px 0 0;
+}
+#sellerTextMainContainer{
+    position: relative;
+    display: inline-block;
+    left:0;
+    height: max-content;
+    width: max-content;
+    vertical-align: middle;
+}
+
+#sellerTextMainContainer div:last-child{
+    margin:0 !important;
+}
+.buttonCta{
+    display: inline-block;
+    position: relative;
+    margin:0 10px 0 0;
+    padding:10px 20px;
+}
+
+#sellerTextMainContainer p{
+    color:#000;
+    text-decoration: none;
+}
+
+
+
+.reviewCardContainer a{
+    text-decoration: none;
+    color:#000;
+}
+.reviewCardInnerContainer{
+    position: relative;
+    display: block;
+    left:0;
+    width: 100%;
+    margin:0 0 10px 0;
+}
+.reviewCardInnerContainer p{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+
+.pictureSquare{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+    cursor: pointer;
+    margin:0 10px 10px 0;
+}
+.pictureSquare div{
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    display: block;
+    background-color: rgba(0,0,0,0.25);
+}
+.pictureSquare div img{
+    position: absolute;
+    height:50%;
+    top:25%;
+    left:50%;
+    transform: translateX(-50%);
+}
+/* .pictureSquare:hover > *{
+    display: block;
+} */
+
+#fileInput{
+    visibility: hidden;
+}
+#fileInputLabel{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+#deletePicButton{
+    position: relative;
+    display: inline-block;
+    padding:15px 20px;
+    top:0;
+    left:0;
+    vertical-align: middle;
+}
+#fileInputLabel div{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    cursor: pointer;
+    border:2px solid;
+    margin:0 10px 10px 0;
+}
+#fileInputLabel div img{
+    position: absolute;
+    height:50%;
+    top:25%;
+    left:50%;
+    transform: translateX(-50%);
+}

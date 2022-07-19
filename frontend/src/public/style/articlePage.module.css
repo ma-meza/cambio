@@ -1,0 +1,25 @@
+.regularText{
+    margin:0 0 20px 0;
+}
+
+#articleContainer{
+    top:60px;
+    position: relative;
+    left:50%;
+    width:600px;
+    transform: translateX(-50%);
+    height:max-content;
+    margin:100px 0 100vh 0;
+    max-width: 100%;
+    border:1px solid #000;
+    padding:20px;
+    border-radius: 10px;
+}
+@media screen and (max-width:780px){
+    #articleContainer{
+        top:20px;
+        margin:0 0 40vh 0;
+        padding: 20px;
+        width:calc(100% - 40px);
+    }
+}
